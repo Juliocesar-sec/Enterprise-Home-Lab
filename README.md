@@ -81,61 +81,15 @@ Physical Infrastructure
  VLAN Design
 ==============
 
-VLAN
+| VLAN ID | Name       | Subnet          | Purpose                        |
+| ------- | ---------- | --------------- | ------------------------------ |
+| 10      | Management | `10.10.10.0/24` | Network devices and monitoring |
+| 20      | Servers    | `10.10.20.0/24` | VMs, Docker, NAS               |
+| 30      | IoT        | `10.10.30.0/24` | Smart home devices             |
+| 40      | Cameras    | `10.10.40.0/24` | CCTV / NVR                     |
+| 50      | Guest      | `10.10.50.0/24` | Guest Wi-Fi                    |
+| 60      | VPN        | `10.10.60.0/24` | WireGuard clients              |
 
-Name
-
-Subnet
-
-Purpose
-
-10
-
-Management
-
-10.10.10.0/24
-
-Network devices and monitoring
-
-20
-
-Servers
-
-10.10.20.0/24
-
-VMs, Docker, NAS
-
-30
-
-IoT
-
-10.10.30.0/24
-
-Smart home devices
-
-40
-
-Cameras
-
-10.10.40.0/24
-
-CCTV / NVR
-
-50
-
-Guest
-
-10.10.50.0/24
-
-Guest Wi-Fi
-
-60
-
-VPN
-
-10.10.60.0/24
-
-WireGuard clients
 
  Virtualization Stack
 ========================
