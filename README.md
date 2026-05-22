@@ -210,29 +210,14 @@ VPN
  Observability Stack
 ======================
 
-Tool
+| Tool        | Function                    |
+| ----------- | --------------------------- |
+| Wazuh       | SIEM and security analytics |
+| Suricata    | IDS/IPS network inspection  |
+| OpenSearch  | Log indexing and search     |
+| Dashboards  | Visualization and analytics |
+| Uptime Kuma | Service health monitoring   |
 
-Function
-
-Wazuh
-
-SIEM
-
-Suricata
-
-IDS
-
-OpenSearch
-
-Log indexing
-
-Dashboards
-
-Visualization
-
-Uptime Kuma
-
-Health checks
 
  Network Services
 ===================
@@ -240,20 +225,26 @@ Health checks
 Core Services
 -------------
 
--   DHCP
--   DNS forwarding
--   VLAN routing
--   QoS
--   WAN failover
--   Multi-WAN support
+| Service        | Description                      |
+| -------------- | -------------------------------- |
+| DHCP           | Dynamic IP address allocation    |
+| DNS Forwarding | Internal DNS resolution          |
+| VLAN Routing   | Inter-VLAN communication control |
+| QoS            | Traffic prioritization           |
+| WAN Failover   | Automatic WAN redundancy         |
+| Multi-WAN      | Load balancing and resiliency    |
+
 
 Reverse Proxy
 -------------
 
--   SSL termination
--   HTTPS exposure
--   Internal routing
--   Access control
+| Feature          | Purpose                         |
+| ---------------- | ------------------------------- |
+| SSL Termination  | HTTPS encryption handling       |
+| HTTPS Exposure   | Secure public access            |
+| Internal Routing | Service forwarding              |
+| Access Control   | Authentication and restrictions |
+
 
  Backup Strategy
 ==================
@@ -261,16 +252,21 @@ Reverse Proxy
 Local Backups
 -------------
 
--   Daily Proxmox snapshots
--   Incremental backups
--   External USB storage
+| Method               | Description                    |
+| -------------------- | ------------------------------ |
+| Daily Snapshots      | Automated Proxmox VM snapshots |
+| Incremental Backups  | Reduced storage consumption    |
+| External USB Storage | Offline backup retention       |
+
 
 Disaster Recovery
 -----------------
 
--   VM restore testing
--   Configuration exports
--   Encrypted backup retention
+| Strategy              | Description                 |
+| --------------------- | --------------------------- |
+| VM Restore Testing    | Backup validation           |
+| Configuration Exports | Router and service recovery |
+| Encrypted Retention   | Secure backup storage       |
 
  Future Improvements
 ======================
