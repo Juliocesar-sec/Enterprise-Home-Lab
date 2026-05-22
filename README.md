@@ -109,100 +109,60 @@ Hypervisor
 VM 1 — Docker Host
 ------------------
 
-### OS
+| Category | Details                                                                                  |
+| -------- | ---------------------------------------------------------------------------------------- |
+| OS       | Ubuntu Server 22.04 LTS                                                                  |
+| Services | Docker, Portainer, WireGuard, Nginx Proxy Manager, AdGuard Home, Uptime Kuma, Watchtower |
+| Purpose  | Main lightweight container host for infrastructure services                              |
 
--   Ubuntu Server 22.04 LTS
-
-### Services
-
--   Docker
--   Portainer
--   WireGuard
--   Nginx Proxy Manager
--   AdGuard Home
--   Uptime Kuma
--   Watchtower
-
-### Purpose
-
-Main lightweight container host for infrastructure services.
 
 VM 2 — Home Assistant
 ---------------------
 
-### OS
+| Category | Details                                       |
+| -------- | --------------------------------------------- |
+| OS       | Home Assistant OS                             |
+| Purpose  | Smart home automation platform                |
+| Features | Zigbee, Bluetooth, MQTT, Add-ons, Automations |
 
--   Home Assistant OS
-
-### Purpose
-
-Smart home automation platform with isolated VM deployment.
-
-### Features
-
--   Zigbee support
--   Bluetooth integration
--   Add-ons
--   Automations
--   MQTT
 
 VM 3 — Security / IDS
 ---------------------
 
-### OS
+| Category | Details                                    |
+| -------- | ------------------------------------------ |
+| OS       | Ubuntu Server                              |
+| Services | Suricata IDS, CrowdSec, Wazuh Agent, Zeek  |
+| Purpose  | Intrusion detection and traffic inspection |
 
--   Ubuntu Server
-
-### Services
-
--   Suricata IDS
--   CrowdSec
--   Wazuh Agent
--   Zeek (optional)
-
-### Purpose
-
-Network traffic inspection and intrusion detection.
 
 VM 4 — Observability & SIEM
 ---------------------------
 
-### Services
+| Category | Details                                    |
+| -------- | ------------------------------------------ |
+| Services | Wazuh, OpenSearch, Dashboards, Syslog      |
+| Purpose  | Centralized logging and security analytics |
 
--   Wazuh
--   OpenSearch
--   Dashboards
--   Syslog aggregation
-
-### Purpose
-
-Centralized logging, monitoring, and security analytics.
 
 VM 5 — Media Server
 -------------------
 
-### Services
+| Category | Details                                       |
+| -------- | --------------------------------------------- |
+| Services | Jellyfin                                      |
+| Features | Intel QuickSync transcoding, remote streaming |
+| Purpose  | Media streaming platform                      |
 
--   Jellyfin
-
-### Features
-
--   Intel QuickSync transcoding
--   Local media streaming
--   Remote access
 
 VM 6 — Backup Server
 --------------------
 
-### Services
+| Category | Details                                   |
+| -------- | ----------------------------------------- |
+| Services | Proxmox Backup Server, Restic, BorgBackup |
+| Purpose  | Disaster recovery and VM backups          |
 
--   Proxmox Backup Server
--   Restic
--   BorgBackup
-
-### Purpose
-
-Snapshots, VM backups, and disaster recovery.
 
  Security Features
 ====================
