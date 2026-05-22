@@ -40,29 +40,13 @@ Inspired by professional network portfolios and homelab documentation practices.
 Physical Infrastructure
 -----------------------
 
-Device
-
-Purpose
-
-MikroTik RB5009UG+S+IN
-
-Core Router / Firewall
-
-MikroTik CSS610-8G-2S+IN
-
-Layer 2 Core Switch
-
-Lenovo ThinkPad T470
-
-Proxmox Virtualization Host
-
-TP-Link SFT1200
-
-Wi-Fi Access Layer
-
-External USB Drive / NAS
-
-Backup Storage
+| Device                   | Role                        | Description                                                   |
+| ------------------------ | --------------------------- | ------------------------------------------------------------- |
+| MikroTik RB5009UG+S+IN   | Core Router / Firewall      | Main routing, firewalling, VLAN segmentation, and VPN gateway |
+| MikroTik CSS610-8G-2S+IN | Layer 2 Core Switch         | VLAN-aware switching and 10G SFP+ uplink aggregation          |
+| Lenovo ThinkPad T470     | Proxmox Virtualization Host | Hosts VMs, containers, and infrastructure services            |
+| TP-Link SFT1200          | Wi-Fi Access Layer          | Edge connectivity for wireless and IoT devices                |
+| External USB Drive / NAS | Backup Storage              | VM snapshots, backups, and disaster recovery storage          |
 
  Network Topology
 ===================
