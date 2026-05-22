@@ -195,37 +195,17 @@ VPN
  Docker Containers
 ====================
 
-Container
+| Container           | Purpose                                |
+| ------------------- | -------------------------------------- |
+| Nginx Proxy Manager | Reverse proxy and SSL management       |
+| AdGuard Home        | DNS filtering and ad blocking          |
+| WireGuard           | VPN server for remote access           |
+| Portainer           | Docker container management            |
+| Uptime Kuma         | Service monitoring and uptime checks   |
+| Watchtower          | Automatic container updates            |
+| Cloudflared         | Secure tunneling and external exposure |
 
-Purpose
 
-Nginx Proxy Manager
-
-Reverse proxy
-
-AdGuard Home
-
-DNS filtering
-
-WireGuard
-
-VPN server
-
-Portainer
-
-Docker management
-
-Uptime Kuma
-
-Monitoring
-
-Watchtower
-
-Automatic updates
-
-Cloudflared
-
-Secure tunneling
 
  Observability Stack
 ======================
