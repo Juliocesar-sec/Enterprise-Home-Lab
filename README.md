@@ -1,11 +1,11 @@
 # Enterprise-Home-Lab
 
-🚀 Enterprise Home Lab & Network Portfolio
+ Enterprise Home Lab & Network Portfolio
 ==========================================
 
 > Advanced Home Lab / Small Office Infrastructure built with MikroTik, Proxmox, Docker, VLAN Segmentation, Security Monitoring, and High Availability services.
 
-📖 Overview
+ Overview
 ===========
 
 This project showcases a modern enterprise-inspired home lab architecture focused on:
@@ -32,7 +32,7 @@ The environment was designed for:
 
 Inspired by professional network portfolios and homelab documentation practices.
 
-🧠 Architecture
+ Architecture
 ===============
 
 Physical Infrastructure
@@ -62,7 +62,7 @@ External USB Drive / NAS
 
 Backup Storage
 
-🌐 Network Topology
+ Network Topology
 ===================
 
                         INTERNET
@@ -92,7 +92,7 @@ Backup Storage
                          └────────────────────────────────┘
     
 
-🧩 VLAN Design
+ VLAN Design
 ==============
 
 VLAN
@@ -151,7 +151,7 @@ VPN
 
 WireGuard clients
 
-🖥️ Virtualization Stack
+ Virtualization Stack
 ========================
 
 Hypervisor
@@ -163,7 +163,7 @@ Hypervisor
 -   ZFS-ready architecture
 -   Scheduled snapshots
 
-📦 Virtual Machines
+ Virtual Machines
 ===================
 
 VM 1 — Docker Host
@@ -264,7 +264,7 @@ VM 6 — Backup Server
 
 Snapshots, VM backups, and disaster recovery.
 
-🔒 Security Features
+ Security Features
 ====================
 
 Router Security
@@ -292,7 +292,7 @@ VPN
 -   Secure remote administration
 -   Encrypted site-to-site connectivity
 
-🐳 Docker Containers
+ Docker Containers
 ====================
 
 Container
@@ -327,7 +327,7 @@ Cloudflared
 
 Secure tunneling
 
-📊 Observability Stack
+ Observability Stack
 ======================
 
 Tool
@@ -354,7 +354,7 @@ Uptime Kuma
 
 Health checks
 
-📡 Network Services
+ Network Services
 ===================
 
 Core Services
@@ -375,7 +375,7 @@ Reverse Proxy
 -   Internal routing
 -   Access control
 
-💾 Backup Strategy
+ Backup Strategy
 ==================
 
 Local Backups
@@ -392,7 +392,7 @@ Disaster Recovery
 -   Configuration exports
 -   Encrypted backup retention
 
-⚙️ Future Improvements
+ Future Improvements
 ======================
 
 -   2.5GbE upgrade
@@ -402,8 +402,7 @@ Disaster Recovery
 -   NAS replication
 -   Hardware IDS appliance
 -   SFP+ aggregation
-
-🛠️ Technologies Used
+ Technologies Used
 =====================
 
 Networking
@@ -443,7 +442,7 @@ Monitoring
 -   Dashboards
 -   Uptime Kuma
 
-📷 Screenshots
+ Screenshots
 ==============
 
 Network Topology
@@ -464,7 +463,7 @@ Wazuh Dashboard
     /assets/wazuh-dashboard.png
     
 
-📚 Learning Goals
+ Learning Goals
 =================
 
 This environment was built to improve skills in:
@@ -480,7 +479,7 @@ This environment was built to improve skills in:
 -   Reverse proxying
 -   Self-hosted services
 
-👨‍💻 Author
+ Author
 ============
 
 Infrastructure and security enthusiast focused on:
@@ -491,7 +490,7 @@ Infrastructure and security enthusiast focused on:
 -   Self-hosted infrastructure
 -   Enterprise home labs
 
-⭐ Project Status
+ Project Status
 ================
 
 🟢 Active Development
