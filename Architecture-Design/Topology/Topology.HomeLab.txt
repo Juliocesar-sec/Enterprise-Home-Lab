@@ -1,0 +1,151 @@
+
+
+
+    # Homelab Network Topology
+    
+    ```ascii
+                                     ┌─────────────────┐
+                                     │    INTERNET     │
+                                     └────────┬────────┘
+                                              │
+                                  WAN1 / WAN2 │
+                                              │
+                        ┌─────────────────────┴─────────────────────┐
+                        │       MikroTik RB5009UG+S+IN              │
+                        │-------------------------------------------│
+                        │ Router / Firewall / VLAN / QoS / VPN      │
+                        │ WireGuard (optional) / Policy Routing     │
+                        └───────┬───────────────────────┬───────────┘
+                                │                       │
+                            2.5G│                   SFP+ 10G
+                                │                       │
+                                │               ┌───────┴────────┐
+                                │               │ MikroTik       │
+                                │               │ CSS610-8G-2S+  │
+                                │               │----------------│
+                                │               │ SwOS Switch    │
+                                │               └───┬────┬────┬──┘
+                                │                   │    │    │
+                                │                   │    │    │
+                             Trunk                 PCs  NAS  AP
+                                │                             │
+                                │                        ┌────┴────┐
+                                │                        │ SFT1200 │
+                                │                        │ Wi-Fi AP│
+                                │                        └────┬────┘
+                                │                             │
+                                │                    Wi-Fi / IoT Devices
+                                │
+                    ┌───────────┴────────────────────┐
+                    │      ThinkPad T470             │
+                    │        Proxmox Host            │
+                    └───────────┬────────────────────┘
+                                │
+            ┌───────────────────┼──────────────────────────────────────┐
+            │                   │                                      │
+            │                   │                                      │
+     ┌──────┴───────┐   ┌───────┴────────┐                   ┌─────────┴────────┐
+     │ VM1          │   │ VM2            │                   │ VM3              │
+     │ Docker Host  │   │ Home Assistant │                   │ Security / IDS   │
+     │ Ubuntu/Deb   │   │ HAOS           │                   │ Debian/Ubuntu    │
+     └──────┬───────┘   └────────────────┘                   └─────────┬────────┘
+            │                                                          │
+            │                                                          │
+            │                                              ┌───────────┼──────────┐
+            │                                              │           │          │
+            │                                              │           │          │
+    ┌───────┴───────────┐                         ┌────────┴───┐ ┌────┴────┐ ┌───┴─────┐
+    │ Docker Containers │                         │ Suricata   │ │ Wazuh   │ │ CrowdSec│
+    ├───────────────────┤                         │ IDS        │ │ Agent    │ │ Optional│
+    │ Nginx Proxy Mgr   │                         └────────────┘ └─────────┘ └─────────┘
+    │ AdGuard Home      │
+    │ WireGuard         │
+    │ Portainer         │
+    │ Uptime Kuma       │
+    │ Watchtower        │
+    └───────────────────┘
+    
+    
+            ┌───────────────────────┐
+            │ VM4                   │
+            │ Observability / Logs  │
+            ├───────────────────────┤
+            │ Wazuh Dashboard       │
+            │ OpenSearch            │
+            │ or Splunk             │
+            └───────────────────────┘
+    
+    
+            ┌───────────────────────┐
+            │ VM5                   │
+            │ Jellyfin Media Server │
+            └───────────────────────┘
+    
+    
+            ┌───────────────────────┐
+            │ VM6                   │
+            │ Backup Server         │
+            ├───────────────────────┤
+            │ Proxmox Backup Server │
+            │ Restic / BorgBackup   │
+            └───────────┬───────────┘
+                        │
+                        │ USB / NAS
+                        │
+              ┌─────────┴─────────┐
+              │ Backup Storage    │
+              │ External HDD/NAS  │
+              └───────────────────┘
+    
+    
+    
+    =========================
+     VLAN DESIGN
+    =========================
+    
+    VLAN 10  → Management
+    VLAN 20  → Servers
+    VLAN 30  → IoT
+    VLAN 40  → Cameras
+    VLAN 50  → Guest Wi-Fi
+    VLAN 60  → VPN Clients
+    
+    
+    
+    =========================
+     RECOMMENDED FLOW
+    =========================
+    
+    Internet
+       ↓
+    RB5009 (Firewall / VLAN / Routing)
+       ↓
+    CSS610 (Core Switch)
+       ↓
+    Proxmox + AP + Clients
+       ↓
+    Services isolated by VLANs
+    
+    
+    
+    =========================
+     BEST PRACTICES
+    =========================
+    
+    - Keep routing/firewall on RB5009
+    - Keep applications inside Proxmox
+    - Use Docker only for lightweight services
+    - Use dedicated VM for Home Assistant
+    - Use dedicated VM for Jellyfin
+    - Use dedicated VM for IDS/logging
+    - Backup Proxmox nightly
+    - Use VLAN isolation everywhere
+    - Expose services only via Nginx Proxy Manager
+    - Use WireGuard for remote administration
+    
+    ```
+    
+
+
+
+Sent from Proton Mail for Android.
