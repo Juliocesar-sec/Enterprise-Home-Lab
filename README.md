@@ -1,4 +1,49 @@
-# Enterprise-Home-Lab
+#  <h2 align="center">Enterprise-Home-Lab</h2>
+
+<!-- Enterprise-Home-Lab Badges -->
+<p align="center">
+
+<a href="https://mikrotik.com/" target="_blank">
+  <img src="https://img.shields.io/badge/MikroTik-RouterOS%20v7-293239?style=flat-square&logo=mikrotik&logoColor=white" height="30">
+</a>
+
+<a href="https://www.proxmox.com/" target="_blank">
+  <img src="https://img.shields.io/badge/Proxmox-Virtualization-E57000?style=flat-square&logo=proxmox&logoColor=white" height="30">
+</a>
+
+<a href="https://www.docker.com/" target="_blank">
+  <img src="https://img.shields.io/badge/Docker-Containerized%20Services-2496ED?style=flat-square&logo=docker&logoColor=white" height="30">
+</a>
+
+<a href="https://www.wireguard.com/" target="_blank">
+  <img src="https://img.shields.io/badge/WireGuard-Secure%20VPN-88171A?style=flat-square&logo=wireguard&logoColor=white" height="30">
+</a>
+
+<a href="https://wazuh.com/" target="_blank">
+  <img src="https://img.shields.io/badge/Wazuh-SIEM%20Monitoring-005E9C?style=flat-square&logo=wazuh&logoColor=white" height="30">
+</a>
+
+<a href="https://suricata.io/" target="_blank">
+  <img src="https://img.shields.io/badge/Suricata-IDS%2FIPS-EF3B2D?style=flat-square&logo=suricata&logoColor=white" height="30">
+</a>
+
+<a href="https://www.opensearch.org/" target="_blank">
+  <img src="https://img.shields.io/badge/OpenSearch-Observability%20Stack-005EB8?style=flat-square&logo=opensearch&logoColor=white" height="30">
+</a>
+
+<a href="https://www.portainer.io/" target="_blank">
+  <img src="https://img.shields.io/badge/Portainer-Container%20Management-13BEF9?style=flat-square&logo=portainer&logoColor=white" height="30">
+</a>
+
+<a href="https://www.home-assistant.io/" target="_blank">
+  <img src="https://img.shields.io/badge/Home%20Assistant-Automation-41BDF5?style=flat-square&logo=homeassistant&logoColor=white" height="30">
+</a>
+
+<a href="https://github.com/Juliocesar-sec/Enterprise-Home-Lab" target="_blank">
+  <img src="https://img.shields.io/badge/Status-Production%20Ready-success?style=flat-square" height="30">
+</a>
+
+</p>
 
  Enterprise Home Lab & Network Portfolio
 ==========================================
