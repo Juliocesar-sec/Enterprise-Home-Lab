@@ -7,6 +7,32 @@
 
 ![Architecture-Design](https://github.com/Juliocesar-sec/Enterprise-Home-Lab/blob/bc6c083219acb8331983a9803698a3b9b82fb665/Architecture-Design/Topology/HomeLab.png)
 
+About This Project
+====================
+
+Enterprise-Home-Lab is a production-inspired infrastructure project designed to simulate modern enterprise networking, virtualization, and security operations within a home lab environment.
+
+The lab combines advanced routing, VLAN segmentation, virtualization, containerization, monitoring, and cybersecurity tooling into a unified self-hosted platform built for both learning and real-world operational experience.
+
+The environment was developed using enterprise concepts and best practices, including:
+
+- Network segmentation and isolation
+- Infrastructure virtualization with Proxmox VE
+- Containerized service deployment with Docker
+- SIEM and IDS/IPS monitoring
+- Secure remote access using WireGuard
+- Reverse proxy and SSL management
+- Automated backups and disaster recovery
+- Observability and centralized logging
+
+This project serves as both:
+
+- A personal infrastructure platform for self-hosted services
+- A technical portfolio demonstrating hands-on networking and security skills
+
+The architecture is continuously improved to explore enterprise technologies such as high availability, automation, monitoring, and scalable infrastructure design.
+
+
  Overview
 ===========
 
