@@ -5,6 +5,8 @@
 
 > Advanced Home Lab / Small Office Infrastructure built with MikroTik, Proxmox, Docker, VLAN Segmentation, Security Monitoring, and High Availability services.
 
+![Architecture-Design](https://github.com/Juliocesar-sec/Enterprise-Home-Lab/blob/bc6c083219acb8331983a9803698a3b9b82fb665/Architecture-Design/Topology/HomeLab.png)
+
  Overview
 ===========
 
