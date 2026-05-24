@@ -395,7 +395,7 @@ Monitoring
 Network Topology
 ----------------
 
-    /assets/network-topology.png
+![NetworkTopology](https://github.com/Juliocesar-sec/Enterprise-Home-Lab/blob/a56fd1fc35ed7d0569c39e79cd373b8efa2f9793/Architecture-Design/Topology/network_topology.png)
     
 
 Proxmox Dashboard
