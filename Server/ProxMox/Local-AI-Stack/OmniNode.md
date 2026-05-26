@@ -1,4 +1,4 @@
-# Installation Report — Local AI Stack (Open WebUI + Ollama)
+# <h2 align="center">Installation Report — Local AI Stack (Open WebUI + Ollama)</h2>
 
 ![webUI](https://github.com/Juliocesar-sec/Enterprise-Home-Lab/blob/b516d978f28bfa2842d55d48e531bae4141b6b63/Local-AI-Stack/ScreenShot/iaa.png)
 
