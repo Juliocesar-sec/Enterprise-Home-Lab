@@ -115,7 +115,7 @@ Physical Infrastructure
 | ------------------------ | --------------------------- | ------------------------------------------------------------- |
 | MikroTik RB5009UG+S+IN   | Core Router / Firewall      | Main routing, firewalling, VLAN segmentation, and VPN gateway |
 | MikroTik CSS610-8G-2S+IN | Layer 2 Core Switch         | VLAN-aware switching and 10G SFP+ uplink aggregation          |
-| Lenovo ThinkPad T470     | Proxmox Virtualization Host | Hosts VMs, containers, and infrastructure services            |
+| Lenovo ThinkCentre m910  | Proxmox Virtualization Host | Hosts VMs, containers, and infrastructure services            |
 | TP-Link SFT1200          | Wi-Fi Access Layer          | Edge connectivity for wireless and IoT devices                |
 | External USB Drive / NAS | Backup Storage              | VM snapshots, backups, and disaster recovery storage          |
 
@@ -126,7 +126,7 @@ Physical Infrastructure
                              │
                     ┌────────────────┐
                     │ MikroTik       │
-                    │ RB5009UG+S+IN │
+                    │ RB5009UG+S+IN  │
                     │ Router/Firewall│
                     └────────────────┘
                              │
@@ -134,7 +134,7 @@ Physical Infrastructure
                              │
                     ┌────────────────┐
                     │ MikroTik       │
-                    │ CSS610-8G-2S+ │
+                    │ CSS610-8G-2S+  │
                     │ Core Switch    │
                     └────────────────┘
                       │      │      │
@@ -145,7 +145,7 @@ Physical Infrastructure
                       └────────────── Proxmox Host
                                           │
                          ┌────────────────────────────────┐
-                         │ Virtual Machines & Containers │
+                         │ Virtual Machines & Containers  │
                          └────────────────────────────────┘
     
 
